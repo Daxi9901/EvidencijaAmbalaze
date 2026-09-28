@@ -1,0 +1,136 @@
+/* Globalni reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Osnovni stil */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  padding: 12px;
+}
+
+/* Naslov */
+h1 {
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Dugmad */
+button {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0078d7;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 22px;       /* veći font */
+  font-weight: 700;      /* bold */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 14px;
+  text-align: center;
+  font-size: 22px;       /* veći brojevi i tekst */
+  font-weight: 700;
+}
+
+/* Input polje koje koristi datalist */
+#ambalaza-input {
+  display: block;
+  margin: 20px auto;       /* centriranje */
+  width: 90%;              /* širina */
+  max-width: 400px;
+  font-size: 26px;         /* veći font */
+  font-weight: 800;        /* bold */
+  padding: 16px;
+  border: 2px solid #0078d7;
+  border-radius: 12px;
+  background-color: #fdfdfd;
+  color: #222;
+  text-align: center;
+}
+
+/* Hover/fokus efekat */
+#ambalaza-input:focus {
+  border-color: #005fa3;
+  background-color: #eef6ff;
+  outline: none;
+}
+
+
+
+/* Dugme "Odaberi fajl" */
+input[type="file"] {
+  display: none; /* sakrij default */
+}
+
+.custom-file-upload {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #0078d7;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.custom-file-upload:hover {
+  background-color: #005fa3;
+}
+
+/* Dark tema */
+.dark-theme {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.dark-theme h1 {
+  color: #ffffff;
+}
+
+.dark-theme table {
+  border-color: #444;
+}
+
+.dark-theme th, .dark-theme td {
+  border: 1px solid #444;
+  color: #f5f5f5;
+}
+
+.dark-theme button,
+.dark-theme .custom-file-upload {
+  background-color: #444;
+  color: #f5f5f5;
+}
+
+.dark-theme button:hover,
+.dark-theme .custom-file-upload:hover {
+  background-color: #666;
+}
